@@ -17,7 +17,8 @@ export class RegistrationComponent implements OnInit {
      lName:["",[Validators.required,Validators.minLength(3)]],
      email:["",[this.checkUserMail,Validators.required]],
      password:["",[Validators.minLength(6)]],
-     cPassword:["",[Validators.minLength(6),Validators.required]]
+     cPassword:["",[Validators.minLength(6),Validators.required]],
+     phoneNum:["",[]]
   },{validators:[this.checkPassword]})
 
   get fName(){
